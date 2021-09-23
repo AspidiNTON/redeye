@@ -1,0 +1,698 @@
+<!DOCTYPE html>  
+<html lang="ru-RU">
+<head>
+
+<meta charset="UTF-8" />
+<title>СЛОЖЕНИЕ ЧИСЕЛ ОНЛАЙН</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://сложение-чисел.рф/style.css" />
+
+
+
+
+</head>
+
+<body >
+
+
+ 
+
+<script  type="text/javascript">
+
+function switchss(ssc)
+{
+
+if (document.forms["Form1"].elements[ssc].value < '6')
+ {
+  switch(document.forms["Form1"].elements[ssc].value)
+  {
+  case '1':return '2'; break;
+  case '2':return '3'; break;
+  case '3':return '8'; break;
+  case '4':return '10'; break;
+  case '5':return '16'; break;
+  }
+ }
+else
+{
+  switch(ssc)
+  {
+  case 'ss1':return document.forms["Form1"].elements["ssdrugaya1"].value; break;
+  case 'ss2':return document.forms["Form1"].elements["ssdrugaya2"].value; break;
+  case 'ss3':return document.forms["Form1"].elements["ssdrugaya3"].value; break;
+  case 'ss4':return document.forms["Form1"].elements["ssdrugaya4"].value; break;
+  case 'ss5':return document.forms["Form1"].elements["ssdrugaya5"].value; break;
+  case 'ss6':return document.forms["Form1"].elements["ssdrugaya6"].value; break;
+  case 'ss7':return document.forms["Form1"].elements["ssdrugaya7"].value; break;
+  }
+
+} 
+
+}
+
+function znak(oper)
+{
+ switch(oper)
+ {
+ case '1':return '+'; break;
+ case '2':return '-'; break;
+ case '3':return '*'; break;
+ case '4':return '÷'; break;
+ }
+
+}
+
+function redraw()
+{
+
+if (document.forms["Form1"].elements["formssend"].checked) 
+ {
+ document.forms["Form1"].elements["ss2"].value = document.forms["Form1"].elements["ss1"].value;
+ document.forms["Form1"].elements["ssdrugaya2"].value = document.forms["Form1"].elements["ssdrugaya1"].value;
+ 
+ document.forms["Form1"].elements["ss3"].value = document.forms["Form1"].elements["ss1"].value;
+ document.forms["Form1"].elements["ssdrugaya3"].value = document.forms["Form1"].elements["ssdrugaya1"].value;
+ 
+ document.forms["Form1"].elements["ss4"].value = document.forms["Form1"].elements["ss1"].value;
+ document.forms["Form1"].elements["ssdrugaya4"].value = document.forms["Form1"].elements["ssdrugaya1"].value;
+ 
+ document.forms["Form1"].elements["ss5"].value = document.forms["Form1"].elements["ss1"].value;
+ document.forms["Form1"].elements["ssdrugaya5"].value = document.forms["Form1"].elements["ssdrugaya1"].value;
+
+ document.forms["Form1"].elements["ss6"].value = document.forms["Form1"].elements["ss1"].value;
+ document.forms["Form1"].elements["ssdrugaya6"].value = document.forms["Form1"].elements["ssdrugaya1"].value;
+
+ document.forms["Form1"].elements["ss7"].value = document.forms["Form1"].elements["ss1"].value;
+ document.forms["Form1"].elements["ssdrugaya7"].value = document.forms["Form1"].elements["ssdrugaya1"].value;
+ 
+ }
+
+
+ 
+
+
+switch(document.forms["Form1"].elements["chss"].value)
+{
+  case '2': 
+  document.getElementById("formchss3").style.display = "none";
+  document.getElementById("formchss31").style.display = "none";
+  document.getElementById("formchss4").style.display = "none";
+  document.getElementById("formchss41").style.display = "none";
+  document.getElementById("formchss5").style.display = "none";
+  document.getElementById("formchss51").style.display = "none";
+  document.getElementById("formchss6").style.display = "none";
+  document.getElementById("formchss61").style.display = "none";
+  document.getElementById("formchss7").style.display = "none";
+  document.getElementById("formchss71").style.display = "none";
+
+  document.getElementById("infoText").innerHTML=document.forms["Form1"].elements["ch1"].value +
+  '<sub>' + switchss('ss1') + '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya"].value) +
+  document.forms["Form1"].elements["ch2"].value+
+   '<sub>' +  switchss('ss2')  +  '</sub>'+'= ?<sub>' +  switchss('ss8')  +  '</sub>';
+   
+
+
+  break;
+  case '3': 
+  document.getElementById("formchss3").style.display = "table-row";
+  document.getElementById("formchss31").style.display = "table-row";
+  document.getElementById("formchss4").style.display = "none";
+  document.getElementById("formchss41").style.display = "none";
+  document.getElementById("formchss5").style.display = "none";
+  document.getElementById("formchss51").style.display = "none";
+  document.getElementById("formchss6").style.display = "none";
+  document.getElementById("formchss61").style.display = "none";
+  document.getElementById("formchss7").style.display = "none";
+  document.getElementById("formchss71").style.display = "none";
+  
+  document.getElementById("infoText").innerHTML=document.forms["Form1"].elements["ch1"].value +
+  '<sub>' + switchss('ss1') + '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya"].value) +
+  document.forms["Form1"].elements["ch2"].value+
+   '<sub>' +  switchss('ss2')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya2"].value) +
+  document.forms["Form1"].elements["ch3"].value+
+   '<sub>' +  switchss('ss3')  +  '</sub>'+'= ?<sub>' +  switchss('ss8')  +  '</sub>';
+  
+  break;
+  case '4': 
+  document.getElementById("formchss3").style.display = "table-row";
+  document.getElementById("formchss31").style.display = "table-row";
+  document.getElementById("formchss4").style.display = "table-row";
+  document.getElementById("formchss41").style.display = "table-row";
+  document.getElementById("formchss5").style.display = "none";
+  document.getElementById("formchss51").style.display = "none";
+  document.getElementById("formchss6").style.display = "none";
+  document.getElementById("formchss61").style.display = "none";
+  document.getElementById("formchss7").style.display = "none";
+  document.getElementById("formchss71").style.display = "none";
+  
+  document.getElementById("infoText").innerHTML=document.forms["Form1"].elements["ch1"].value +
+  '<sub>' + switchss('ss1') + '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya"].value) +
+  document.forms["Form1"].elements["ch2"].value+
+   '<sub>' +  switchss('ss2')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya2"].value) +
+  document.forms["Form1"].elements["ch3"].value+
+   '<sub>' +  switchss('ss3')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya3"].value) +
+  document.forms["Form1"].elements["ch4"].value+
+   '<sub>' +  switchss('ss4')  +  '</sub>'+'= ?<sub>' +  switchss('ss8')  +  '</sub>';
+   
+    document.getElementById("infoText").style.fontSize = '24px';
+
+  break;
+  case '5': 
+  document.getElementById("formchss3").style.display = "table-row";
+  document.getElementById("formchss31").style.display = "table-row";
+  document.getElementById("formchss4").style.display = "table-row";
+  document.getElementById("formchss41").style.display = "table-row";
+  document.getElementById("formchss5").style.display = "table-row";
+  document.getElementById("formchss51").style.display = "table-row";
+  document.getElementById("formchss6").style.display = "none";
+  document.getElementById("formchss61").style.display = "none";
+  document.getElementById("formchss7").style.display = "none";
+  document.getElementById("formchss71").style.display = "none";
+  
+    document.getElementById("infoText").innerHTML=document.forms["Form1"].elements["ch1"].value +
+  '<sub>' + switchss('ss1') + '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya"].value) +
+  document.forms["Form1"].elements["ch2"].value+
+   '<sub>' +  switchss('ss2')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya2"].value) +
+  document.forms["Form1"].elements["ch3"].value+
+   '<sub>' +  switchss('ss3')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya3"].value) +
+  document.forms["Form1"].elements["ch4"].value+
+   '<sub>' +  switchss('ss4')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya4"].value) +
+  document.forms["Form1"].elements["ch5"].value+
+   '<sub>' +  switchss('ss5')  +  '</sub>'+'= ?<sub>' +  switchss('ss8')  +  '</sub>';
+ 
+  document.getElementById("infoText").style.fontSize = '22px';
+  break;
+  case '6': 
+  document.getElementById("formchss3").style.display = "table-row";
+  document.getElementById("formchss31").style.display = "table-row";
+  document.getElementById("formchss4").style.display = "table-row";
+  document.getElementById("formchss41").style.display = "table-row";
+  document.getElementById("formchss5").style.display = "table-row";
+  document.getElementById("formchss51").style.display = "table-row";
+  document.getElementById("formchss6").style.display = "table-row";
+  document.getElementById("formchss61").style.display = "table-row";
+  document.getElementById("formchss7").style.display = "none";
+  document.getElementById("formchss71").style.display = "none";
+
+    document.getElementById("infoText").innerHTML=document.forms["Form1"].elements["ch1"].value +
+  '<sub>' + switchss('ss1') + '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya"].value) +
+  document.forms["Form1"].elements["ch2"].value+
+   '<sub>' +  switchss('ss2')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya2"].value) +
+  document.forms["Form1"].elements["ch3"].value+
+   '<sub>' +  switchss('ss3')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya3"].value) +
+  document.forms["Form1"].elements["ch4"].value+
+   '<sub>' +  switchss('ss4')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya4"].value) +
+  document.forms["Form1"].elements["ch5"].value+
+   '<sub>' +  switchss('ss5')  +  '</sub>' +
+  znak(document.forms["Form1"].elements["operaciya5"].value) +
+  document.forms["Form1"].elements["ch6"].value+
+   '<sub>' +  switchss('ss6')  +  '</sub>'+'= ?<sub>' +  switchss('ss8')  +  '</sub>';
+   
+  document.getElementById("infoText").style.fontSize = '20px';
+  break;
+  case '7': 
+  document.getElementById("formchss3").style.display = "table-row";
+  document.getElementById("formchss31").style.display = "table-row";
+  document.getElementById("formchss4").style.display = "table-row";
+  document.getElementById("formchss41").style.display = "table-row";
+  document.getElementById("formchss5").style.display = "table-row";
+  document.getElementById("formchss51").style.display = "table-row";
+  document.getElementById("formchss6").style.display = "table-row";
+  document.getElementById("formchss61").style.display = "table-row";
+  document.getElementById("formchss7").style.display = "table-row";
+  document.getElementById("formchss71").style.display = "table-row";
+  
+  document.getElementById("infoText").innerHTML=document.forms["Form1"].elements["ch1"].value +
+  '<sub>' + switchss('ss1') + '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya"].value) +
+  document.forms["Form1"].elements["ch2"].value+
+   '<sub>' +  switchss('ss2')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya2"].value) +
+  document.forms["Form1"].elements["ch3"].value+
+   '<sub>' +  switchss('ss3')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya3"].value) +
+  document.forms["Form1"].elements["ch4"].value+
+   '<sub>' +  switchss('ss4')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya4"].value) +
+  document.forms["Form1"].elements["ch5"].value+
+   '<sub>' +  switchss('ss5')  +  '</sub>' +
+  znak(document.forms["Form1"].elements["operaciya5"].value) +
+  document.forms["Form1"].elements["ch6"].value+
+   '<sub>' +  switchss('ss6')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya6"].value) +
+  document.forms["Form1"].elements["ch7"].value+
+   '<sub>' +  switchss('ss7')  +  '</sub>'+'= ?<sub>' +  switchss('ss8')  +  '</sub>';
+   
+  document.getElementById("infoText").style.fontSize = '18px';
+  break;  
+ default:
+  document.getElementById("formchss3").style.display = "none";
+  document.getElementById("formchss31").style.display = "none";
+  document.getElementById("formchss4").style.display = "none";
+  document.getElementById("formchss41").style.display = "none";
+  document.getElementById("formchss5").style.display = "none";
+  document.getElementById("formchss51").style.display = "none";
+  document.getElementById("formchss6").style.display = "none";
+  document.getElementById("formchss61").style.display = "none";
+  document.getElementById("formchss7").style.display = "none";
+  document.getElementById("formchss71").style.display = "none";
+  
+  document.getElementById("infoText").innerHTML=document.forms["Form1"].elements["ch1"].value +
+  '<sub>' + switchss('ss1') + '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya"].value) +
+  document.forms["Form1"].elements["ch2"].value+
+   '<sub>' +  switchss('ss2')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya2"].value) +
+  document.forms["Form1"].elements["ch3"].value+
+   '<sub>' +  switchss('ss3')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya3"].value) +
+  document.forms["Form1"].elements["ch4"].value+
+   '<sub>' +  switchss('ss4')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya4"].value) +
+  document.forms["Form1"].elements["ch5"].value+
+   '<sub>' +  switchss('ss5')  +  '</sub>' +
+  znak(document.forms["Form1"].elements["operaciya5"].value) +
+  document.forms["Form1"].elements["ch6"].value+
+   '<sub>' +  switchss('ss6')  +  '</sub>'+
+  znak(document.forms["Form1"].elements["operaciya6"].value) +
+  document.forms["Form1"].elements["ch7"].value+
+   '<sub>' +  switchss('ss7')  +  '</sub>'+'= ?<sub>' +  switchss('ss8')  +  '</sub>';
+  break;
+}
+
+
+ 
+if (document.forms["Form1"].elements["ss1"].value == 6) 
+document.getElementById("formss1").style.display = "block";
+
+if (document.forms["Form1"].elements["ss1"].value != 6) 
+document.getElementById("formss1").style.display = "none";
+
+if (document.forms["Form1"].elements["ss1"].value != 4) 
+document.getElementById("formssend").style.display = "block";
+
+if (document.forms["Form1"].elements["ss2"].value == 6) 
+document.getElementById("formss2").style.display = "block";
+if (document.forms["Form1"].elements["ss2"].value != 6) 
+document.getElementById("formss2").style.display = "none";
+
+if (document.forms["Form1"].elements["ss3"].value == 6) 
+document.getElementById("formss3").style.display = "block";
+if (document.forms["Form1"].elements["ss3"].value != 6) 
+document.getElementById("formss3").style.display = "none";
+
+if (document.forms["Form1"].elements["ss4"].value == 6) 
+document.getElementById("formss4").style.display = "block";
+if (document.forms["Form1"].elements["ss4"].value != 6) 
+document.getElementById("formss4").style.display = "none";
+
+if (document.forms["Form1"].elements["ss5"].value == 6) 
+document.getElementById("formss5").style.display = "block";
+if (document.forms["Form1"].elements["ss5"].value != 6) 
+document.getElementById("formss5").style.display = "none";
+
+if (document.forms["Form1"].elements["ss6"].value == 6) 
+document.getElementById("formss6").style.display = "block";
+if (document.forms["Form1"].elements["ss6"].value != 6) 
+document.getElementById("formss6").style.display = "none";
+
+if (document.forms["Form1"].elements["ss7"].value == 6) 
+document.getElementById("formss7").style.display = "block";
+if (document.forms["Form1"].elements["ss7"].value != 6) 
+document.getElementById("formss7").style.display = "none";
+
+if (document.forms["Form1"].elements["ss8"].value == 6) 
+document.getElementById("formss8").style.display = "block";
+if (document.forms["Form1"].elements["ss8"].value != 6) 
+document.getElementById("formss8").style.display = "none";
+
+if (document.forms["Form1"].elements["ss9"].value == 6) 
+document.getElementById("formss9").style.display = "block";
+if (document.forms["Form1"].elements["ss9"].value != 6) 
+document.getElementById("formss9").style.display = "none";
+}
+
+
+
+
+
+
+
+function minus() 
+{
+var i = parseInt(document.forms["Form1"].elements["chss"].value);
+if(i > 2)
+  document.forms["Form1"].elements["chss"].value = i-1;
+redraw();
+}
+
+function plus() 
+{
+var i = parseInt(document.forms["Form1"].elements["chss"].value);
+if(i < 7)
+  document.forms["Form1"].elements["chss"].value = i+1;
+  redraw();
+}
+
+function vievrezult() 
+{
+document.getElementById("vievrezult").style.display = "block";
+
+}
+
+//var timerOnce = window.setTimeout("redraw();", 120);
+
+
+
+
+function ValidateForm1()
+{
+
+document.forms["Form1"].submit();
+}
+//-->
+</script>
+
+
+
+  <form name="Form1" method="post" action="http://xn----itbabbncshoi8aj6f.xn--p1ai/"  enctype="application/x-www-form-urlencoded" >
+
+  <table  align="center" style="width:510px;border:0px #C0C0C0 solid;">
+    <tr>
+      <td style="width:250px;border:0px #C0C0C0 solid;text-align:center;">
+      Количество чисел 
+	  <a href="javascript:minus()" style='cursor:hand;cursor:pointer;text-decoration: none;' title = "Убавить количесто чисел">―</a>
+	  <select name="chss" size="1" onchange="redraw();" >
+      <option selected  value="2">Два</option>
+      <option  value="3">Три</option>
+      <option  value="4">Четыре</option>
+	  <option  value="5">Пять</option>
+      <option  value="6">Шесть</option>
+	  <option  value="7">Семь</option>
+      </select>
+	  <a href="javascript:plus()" style='cursor:hand;cursor:pointer;text-decoration: none;' title = "Прибавить количесто чисел">+</a>
+	  
+      </td>
+      <td style="width:250px;border:0px #C0C0C0 solid;text-align:center;">
+      Его система счисления
+      </td>
+    </tr>
+	
+    <tr>
+      <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+      Число 1: <input type="text" id="ch1" onchange="redraw();" style="width:90px;" name="chislo1" value="33.3">
+      </td>
+      <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+      CC: 
+      <select name="ss1" size="1" onchange="redraw();" >
+      <option  value="1">Двоичная</option>
+      <option  value="2">Троичная</option>
+      <option  value="3">Восьмеричная</option>
+	  <option selected value="4">Десятичная</option>
+      <option  value="5">Шестандцатиричная</option>
+	  <option  value="6">Другая</option>
+      </select>
+       <div style=" display:none;" id="formss1">
+        Какая? (число) <INPUT TYPE="text" NAME="ssdrugaya1" onchange="redraw();" VALUE="4" style="width:50px"> </div>	  
+       </div>
+	   <div style=" display:none;" id="formssend">
+        <INPUT TYPE="checkbox" NAME="formssend" VALUE="1" onchange="redraw();"  > Остальные числа этой же СС   
+       </div>
+	  </td>
+    </tr>	
+
+    <tr>
+     <td  style="padding:10px 0 10px 0;border:0px #C0C0C0 solid;text-align:center;">
+      Операция: 
+      <select name="operaciya" size="1" onchange="redraw();" >
+      <option  value="1">Сложение</option>
+      <option  value="2">Вычитание</option>
+      <option  value="3">Умножение</option>
+      <option  value="4">Деление</option>
+      </select>
+      </td>
+    </tr>	
+
+	
+     <tr>
+      <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+      Число 2: <input type="text" id="ch2" onchange="redraw();" style="width:90px;" name="chislo2" value="10.1">
+      </td>
+      <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+      CC: 
+      <select name="ss2" size="1" onchange="redraw();" >
+      <option  value="1">Двоичная</option>
+      <option  value="2">Троичная</option>
+      <option  value="3">Восьмеричная</option>
+	  <option selected value="4">Десятичная</option>
+      <option  value="5">Шестандцатиричная</option>
+	  <option  value="6">Другая</option>
+      </select>
+       <div style=" display:none;" id="formss2">
+        Какая? (число) <INPUT TYPE="text" NAME="ssdrugaya2" onchange="redraw();" VALUE="4" style="width:50px"> </div>	  
+       </td>
+     </tr>	
+	
+	  <tr style=" display:none;" id="formchss3">
+	   <td  style="padding:10px 0 10px 0;width:250px;border:0px #C0C0C0 solid;text-align:center;">
+        Операция: 
+        <select name="operaciya2" size="1" onchange="redraw();" >
+        <option  value="1">Сложение</option>
+        <option  value="2">Вычитание</option>
+        <option  value="3">Умножение</option>
+        <option  value="4">Деление</option>
+        </select>
+        </td>
+      </tr>	
+
+	
+       <tr style="display:none;" id="formchss31">
+        <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+        Число 3: <input type="text" id="ch3" onchange="redraw();" style="width:90px;" name="chislo3" value="10.2">
+        </td>
+        <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+        CC: 
+        <select name="ss3" size="1" onchange="redraw();" >
+        <option  value="1">Двоичная</option>
+        <option  value="2">Троичная</option>
+        <option  value="3">Восьмеричная</option>
+	    <option selected value="4">Десятичная</option>
+        <option  value="5">Шестандцатиричная</option>
+	    <option  value="6">Другая</option>
+        </select>
+         <div style=" display:none;" id="formss3">
+          Какая? (число) <INPUT TYPE="text" NAME="ssdrugaya3" onchange="redraw();" VALUE="4" style="width:50px">
+		  </div>	  
+	     </td>
+       </tr>
+
+
+
+	  <tr style=" display:none;" id="formchss4">
+       <td  style="padding:10px 0 10px 0;border:0px #C0C0C0 solid;text-align:center;">
+        Операция: 
+        <select name="operaciya3" size="1" onchange="redraw();" >
+        <option  value="1">Сложение</option>
+        <option  value="2">Вычитание</option>
+        <option  value="3">Умножение</option>
+        <option  value="4">Деление</option>
+        </select>
+        </td>
+      </tr>	
+
+	
+       <tr style=" display:none;" id="formchss41">
+        <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+        Число 4: <input type="text" id="ch4" onchange="redraw();" style="width:90px;" name="chislo4" value="10.3">
+        </td>
+        <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+        CC: 
+        <select name="ss4" size="1" onchange="redraw();" >
+        <option  value="1">Двоичная</option>
+        <option  value="2">Троичная</option>
+        <option  value="3">Восьмеричная</option>
+	    <option selected value="4">Десятичная</option>
+        <option  value="5">Шестандцатиричная</option>
+	    <option  value="6">Другая</option>
+        </select>
+         <div style=" display:none;" id="formss4">
+          Какая? (число) <INPUT TYPE="text" NAME="ssdrugaya4" onchange="redraw();" VALUE="4" style="width:50px"> </div>	  
+	     </td>
+       </tr>
+	
+	
+
+
+	  <tr style=" display:none;" id="formchss5">
+       <td  style="padding:10px 0 10px 0;border:0px #C0C0C0 solid;text-align:center;">
+        Операция: 
+        <select name="operaciya4" size="1" onchange="redraw();" >
+        <option  value="1">Сложение</option>
+        <option  value="2">Вычитание</option>
+        <option  value="3">Умножение</option>
+        <option  value="4">Деление</option>
+        </select>
+        </td>
+      </tr>	
+
+	
+       <tr style=" display:none;" id="formchss51">
+        <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+        Число 5: <input type="text" id="ch5" onchange="redraw();" style="width:90px;" name="chislo5" value="10.4">
+        </td>
+        <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+        CC: 
+        <select name="ss5" size="1" onchange="redraw();" >
+        <option  value="1">Двоичная</option>
+        <option  value="2">Троичная</option>
+        <option  value="3">Восьмеричная</option>
+	    <option selected value="4">Десятичная</option>
+        <option  value="5">Шестандцатиричная</option>
+	    <option  value="6">Другая</option>
+        </select>
+         <div style=" display:none;" id="formss5">
+          Какая? (число) <INPUT TYPE="text" NAME="ssdrugaya5"onchange="redraw();"  VALUE="4" style="width:50px"> </div>	  
+	     </td>
+       </tr>
+	
+
+
+	  <tr style=" display:none;" id="formchss6">
+       <td  style="padding:10px 0 10px 0;border:0px #C0C0C0 solid;text-align:center;">
+        Операция: 
+        <select name="operaciya5" size="1" onchange="redraw();" >
+        <option  value="1">Сложение</option>
+        <option  value="2">Вычитание</option>
+        <option  value="3">Умножение</option>
+        <option  value="4">Деление</option>
+        </select>
+        </td>
+      </tr>	
+
+	
+       <tr style=" display:none;" id="formchss61">
+        <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+        Число 6: <input type="text" id="ch6" onchange="redraw();" style="width:90px;" name="chislo6" value="10.5">
+        </td>
+        <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+        CC: 
+        <select name="ss6" size="1" onchange="redraw();" >
+        <option  value="1">Двоичная</option>
+        <option  value="2">Троичная</option>
+        <option  value="3">Восьмеричная</option>
+	    <option selected value="4">Десятичная</option>
+        <option  value="5">Шестандцатиричная</option>
+	    <option  value="6">Другая</option>
+        </select>
+         <div style=" display:none;" id="formss6">
+          Какая? (число) <INPUT TYPE="text" NAME="ssdrugaya6" onchange="redraw();" VALUE="4" style="width:50px"> </div>	  
+	     </td>
+       </tr>
+
+
+
+	  <tr style=" display:none;" id="formchss7">
+       <td  style="padding:10px 0 10px 0;border:0px #C0C0C0 solid;text-align:center;">
+        Операция: 
+        <select name="operaciya6" size="1" onchange="redraw();" >
+        <option  value="1">Сложение</option>
+        <option  value="2">Вычитание</option>
+        <option  value="3">Умножение</option>
+        <option  value="4">Деление</option>
+        </select>
+        </td>
+      </tr>	
+
+	
+       <tr style=" display:none;" id="formchss71">
+        <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+        Число 7: <input type="text" id="ch7" onchange="redraw();" style="width:90px;" name="chislo7" value="10.6">
+        </td>
+        <td style="width:250px;border:2px #C0C0C0 solid;text-align:center;">
+        CC: 
+        <select name="ss7" size="1" onchange="redraw();" >
+        <option  value="1">Двоичная</option>
+        <option  value="2">Троичная</option>
+        <option  value="3">Восьмеричная</option>
+	    <option selected value="4">Десятичная</option>
+        <option  value="5">Шестандцатиричная</option>
+	    <option  value="6">Другая</option>
+        </select>
+         <div style=" display:none;" id="formss7">
+          Какая? (число) <INPUT TYPE="text" NAME="ssdrugaya7" onchange="redraw();" VALUE="4" style="width:50px"> </div>	  
+	     </td>
+       </tr>
+	   
+      <tr >
+       <td colspan=2 style="border:0px #C0C0C0 solid;text-align:center;padding:15px;">
+        Показать результат в : 
+        <select name="ss8" size="1" onchange="redraw();" >
+        <option  value="1">Двоичной</option>
+        <option  value="2">Троичной</option>
+        <option  value="3">Восьмеричной</option>
+	    <option selected value="4">Десятичной</option>
+        <option  value="5">Шестандцатиричной</option>
+	    <option  value="6">Другой</option>
+        </select> CC
+		<div style=" display:none;" id="formss8">
+          Какой? (число) <INPUT TYPE="text" NAME="ssdrugaya8" onchange="redraw();" VALUE="4" style="width:50px">
+		  </div>	  
+        </td>
+      </tr>	
+	   
+      <tr>
+       <td colspan=2 style="border:0px #C0C0C0 solid;text-align:center;padding:5px;">
+        Если числа в разных СС,то производить расчет в : 
+        <select name="ss9" size="1" onchange="redraw();" >
+        <option  value="1">Двоичной</option>
+        <option  value="2">Троичной</option>
+        <option  value="3">Восьмеричной</option>
+	    <option selected value="4">Десятичной</option>
+        <option  value="5">Шестандцатиричной</option>
+	    <option  value="6">Другой</option>
+        </select>
+		<div style=" display:none;" id="formss9">
+          Какой? (число) <INPUT TYPE="text" NAME="ssdrugaya9" onchange="redraw();" VALUE="4" style="width:50px">
+		  </div>	  
+        </td>
+      </tr>	
+
+       <tr>
+        <td colspan=2 style="border:0px #C0C0C0 solid;text-align:center;padding:5px 0 15px 0;">
+        <input type="button" id="Button1" name="Button1" value="Раcсчитать" onClick="ValidateForm1()" style="width:500px;height:26px;font-family:Arial;font-size:13px;z-index:4">
+        </td>
+       </tr>
+       <tr>
+        <td colspan=2 style="border:0px #C0C0C0 solid;text-align:center;padding:5px;">
+     		<FONT color="#ff0000" size="6">
+		  <div  id="infoText" >		  </div>
+		</FONT>
+        </td>
+       </tr>
+	
+</table>
+</form>
+<br>		
+
+			
+		</div>
+
+		
+			
+	</div> 
+</body>
+</html>
