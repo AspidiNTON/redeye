@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Калькулятор систем счисления</title>
+  <script src="./calc.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+ </head>
+ <body bgcolor="#000000" style="font-family: Tahoma">
+    <ul class="menu-main">
+        <li><a href="" class="current">Калькулятор СИ</a></li>
+        <li><a href="">Задачи по питону</a></li>
+      </ul>
+      <br>
+<table class="main_table">
+    <tr>
+        <td class="custom-field">
+            <input placeholder="Первое число" maxlength="20" id="number"/>
+        </td>
+        <td class="custom-field">
+            <input style="width: 32px;" placeholder="СИ" maxlength="2" value="" id="osnova1">
+        </td>
+    </tr>
+    <tr>
+        <td class="custom-field">
+            <text id="resultat"></text>
+        </td>
+        <td class="custom-field">
+            <input style="width: 32px;" placeholder="СИ" maxlength="2" value="" id="osnova2">
+        </td>
+    </tr>
+    <tr>
+        <td class="custom-field"><button class="button" onclick="roughScale()">Перевести</button></td>
+    </tr>
+</table>
+</body>
+</html>
